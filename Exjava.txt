@@ -1,0 +1,39 @@
+ class A
+ {
+     int add(int a,int b)
+     {
+         System.out.println("the adttion is");
+         return(a+b);
+     }
+     int sub(int a,int b )
+    {
+       System.out.println("the sub is ");
+       return(a-b);
+    }
+}
+ class Muti extends A
+ {
+     int muti(int a,int b)
+     {
+         System.out.println("mulitipliction is");
+         return(a*b);
+     }
+     int divi(int a,int b)
+     {
+         System.out.println("division");
+         return(a/b);
+     }
+ }
+ 
+ class Ex99
+ {
+     public static void main(String args[])
+     {
+         Muti op=new Muti();
+        System.out.println( op.add(10,20));
+         System.out.println(op.sub(4,2));
+       System.out.println(op.muti(4,2));
+     System.out.println(op.divi(4,2));
+         
+     }
+ }
